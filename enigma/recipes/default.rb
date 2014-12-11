@@ -8,7 +8,6 @@
 #
 
 include_recipe 'geoip'
-include_recipe 'php'
 
 # update the main pear channel
 php_pear_channel 'pear.php.net' do
