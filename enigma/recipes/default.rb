@@ -9,12 +9,6 @@
 
 include_recipe 'geoip'
 
-# update the main pear channel
-php_pear_channel 'pear.php.net' do
-  action :update
-end
-
-# install memcached
-php_pear "memcached" do
+yum_package "php-pecl-memcached" do
   action :install
 end
