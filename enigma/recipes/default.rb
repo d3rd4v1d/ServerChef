@@ -8,7 +8,3 @@
 #
 
 include_recipe 'geoip'
-
-yum_package "php-pecl-memcached" do
-  action :install
-end
