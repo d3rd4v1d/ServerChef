@@ -8,17 +8,14 @@
 #
 
 include_recipe 'geoip'
+include_recipe 'php'
 
 # update the main pear channel
 php_pear_channel 'pear.php.net' do
   action :update
 end
 
-# update the main pecl channel
-php_pear_channel 'pecl.php.net' do
-  action :update
-end
-
+# install memcached
 php_pear "memcached" do
   action :install
 end
